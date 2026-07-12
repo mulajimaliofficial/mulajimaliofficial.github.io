@@ -1,0 +1,119 @@
+.about {
+    padding: 6rem 0;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.about-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.about-header p {
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-description {
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: var(--radius);
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--primary);
+    box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+}
+
+.about-card h4 {
+    color: var(--primary);
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: .3rem;
+}
+
+.about-card h4:first-child {
+    margin-top: 0;
+}
+
+.about-card span {
+    display: block;
+    color: var(--white);
+    font-size: .95rem;
+}
+
+.about-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+.about-technologies span {
+    padding: .7rem 1.2rem;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 229, 255, .25);
+    background: rgba(0, 229, 255, .08);
+    color: var(--primary);
+    font-size: .9rem;
+    transition: var(--transition);
+}
+
+.about-technologies span:hover {
+    background: var(--primary);
+    color: var(--dark);
+    transform: translateY(-4px);
+}
+
+@media (max-width: 991px) {
+
+    .about {
+        padding: 4rem 0;
+    }
+
+    .about-description {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-card {
+        margin-top: 2rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .about-header {
+        margin-bottom: 2.5rem;
+    }
+
+    .about-technologies {
+        gap: .7rem;
+    }
+
+    .about-technologies span {
+        width: 100%;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,50 @@
+export const SKILL_CATEGORIES = [
+    {
+        id: 1,
+        title: "Frontend",
+        icon: "bi bi-window",
+        skills: [
+            "React",
+            "TypeScript",
+            "JavaScript",
+            "Bootstrap",
+            "HTML5",
+            "CSS3",
+            "Redux",
+            "Apollo Client",
+        ],
+    },
+    {
+        id: 2,
+        title: "Backend",
+        icon: "bi bi-code-slash",
+        skills: [
+            "Python",
+            "Flask",
+            "Django",
+            "REST API",
+            "GraphQL",
+            "SQLAlchemy",
+        ],
+    },
+    {
+        id: 3,
+        title: "Cloud & Database",
+        icon: "bi bi-cloud",
+        skills: [
+            "AWS",
+            "PostgreSQL",
+            "MySQL",
+            "Firebase",
+            "Docker",
+            "S3",
+            "Lambda",
+        ],
+    },
+    {
+        id: 4,
+        title: "Tools",
+        icon: "bi bi-tools",
+        skills: ["Git", "GitHub", "Jenkins", "Jira", "VS Code", "Linux"],
+    },
+];

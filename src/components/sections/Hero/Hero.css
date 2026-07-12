@@ -1,0 +1,199 @@
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 22rem;
+    height: 22rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.35rem solid var(--primary);
+    box-shadow:
+        0 0 1.25rem rgba(0, 229, 255, 0.35),
+        0 0 3.125rem rgba(0, 229, 255, 0.15);
+    transition: var(--transition);
+}
+
+.hero-image img:hover {
+    transform: scale(1.03);
+    box-shadow:
+        0 0 1.875rem rgba(0, 229, 255, 0.6),
+        0 0 4.375rem rgba(0, 229, 255, 0.3);
+}
+
+.hero-content {
+    max-width: 38rem;
+}
+
+.hero-greeting {
+    color: var(--primary);
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #00e5ff,
+        #ffffff
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+
+    color: var(--text);
+
+    line-height: 2;
+
+    font-size: 1.05rem;
+
+    max-width: 38rem;
+
+    margin-bottom: 2rem;
+}
+
+.hero-designation span {
+    color: var(--primary);
+}
+
+.hero-description {
+    color: var(--text);
+    line-height: 1.9;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+    max-width: 35rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.hero-stats {
+     display:flex;
+
+    gap:1.5rem;
+
+    margin-top:3rem;
+
+    flex-wrap:wrap;
+}
+
+.hero-stats h3 {
+    color: var(--primary);
+
+    font-size: 2rem;
+}
+
+.hero-stats span {
+    color: var(--text);
+}
+
+.hero-typing {
+    color: var(--primary);
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+
+    margin-bottom: 1.5rem;
+
+    min-height: 2rem;
+}
+
+.cursor {
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+
+.hero-skills{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:.8rem;
+
+margin:2rem 0;
+
+}
+
+.hero-skills span{
+
+padding:.6rem 1rem;
+
+border:1px solid rgba(0,229,255,.25);
+
+border-radius:999px;
+
+background:rgba(0,229,255,.08);
+
+color:var(--primary);
+
+transition:.3s;
+
+font-size:.9rem;
+
+}
+
+.hero-skills span:hover{
+
+background:var(--primary);
+
+color:var(--dark);
+
+transform:translateY(-3px);
+
+}
+
+@media (max-width: 992px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 2.5rem;
+    }
+
+    .hero-image img {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-image img {
+        width: 15rem;
+        height: 15rem;
+    }
+}

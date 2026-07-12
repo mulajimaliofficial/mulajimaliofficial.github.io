@@ -1,0 +1,40 @@
+.app-button {
+    min-width: 12rem;
+    height: 3.5rem;
+    border-radius: 3.125rem;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all .3s ease;
+    padding: 0 2rem;
+}
+
+.app-button-primary {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+.app-button-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 .9375rem rgba(0,229,255,.45);
+}
+
+.app-button-outline {
+    border: .125rem solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.app-button-outline:hover {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+@media (max-width:576px){
+
+.app-button{
+
+width:100%;
+
+}
+
+}
